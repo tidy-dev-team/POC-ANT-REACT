@@ -1,19 +1,19 @@
 import { useState } from 'react'
 import styled from 'styled-components'
-import { 
+import {
   ConfigProvider,
-  Button, 
-  Card, 
-  Space, 
-  Typography, 
+  Button,
+  Card,
+  Space,
+  Typography,
   Layout,
-  theme 
+  theme
 } from 'antd'
-import { 
-  SmileOutlined, 
-  HeartOutlined, 
+import {
+  SmileOutlined,
+  HeartOutlined,
   RocketOutlined,
-  ThunderboltOutlined 
+  ThunderboltOutlined
 } from '@ant-design/icons'
 import themeConfig from './theme.json'
 
@@ -73,7 +73,7 @@ function AppContent({ count, setCount }) {
           <RocketOutlined /> Ant Design + Vite + React + Styled Components
         </Title>
       </StyledHeader>
-      
+
       <StyledContent>
         <StyledCard>
           <Space direction="vertical" size="large" style={{ width: '100%' }}>
@@ -92,7 +92,7 @@ function AppContent({ count, setCount }) {
                 <li><strong>Vite</strong> - Fast Build Tool</li>
               </ul>
               <Paragraph type="secondary">
-                Theme colors: Primary <span style={{ color: token.colorPrimary }}>#{token.colorPrimary}</span>, 
+                Theme colors: Primary <span style={{ color: token.colorPrimary }}>#{token.colorPrimary}</span>,
                 Success <span style={{ color: token.colorSuccess }}>#{token.colorSuccess}</span>
               </Paragraph>
             </div>
@@ -101,8 +101,8 @@ function AppContent({ count, setCount }) {
               <Title level={4}>Counter Example</Title>
               <Paragraph>Current count: <strong>{count}</strong></Paragraph>
               <Space wrap>
-                <IconButton 
-                  type="primary" 
+                <IconButton
+                  type="primary"
                   onClick={() => setCount(count + 1)}
                 >
                   <ThunderboltOutlined /> Increment
@@ -117,13 +117,13 @@ function AppContent({ count, setCount }) {
             </div>
 
             <div>
-              <Button 
-                type="primary" 
-                size="large" 
+              <Button
+                type="primary"
+                size="large"
                 icon={<HeartOutlined />}
-                style={{ 
+                style={{
                   background: token.colorPrimary,
-                  width: '100%' 
+                  width: '100%'
                 }}
               >
                 Start Building Something Amazing!
